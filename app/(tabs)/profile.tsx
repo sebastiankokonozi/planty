@@ -4,7 +4,7 @@ import { useUserStore } from "@/store/userStore";
 
 export default function ProfileScreen() {
   const toggleHasOnboarded = useUserStore(
-    (state) => state.toggleHasFinishedOnboarding
+    (state) => state.toggleHasFinishedOnboarding,
   );
   return (
     <View style={styles.container}>
@@ -19,8 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
-  },
-  text: {
-    fontSize: 24,
   },
 });

@@ -6,7 +6,7 @@ import { useRouter } from "expo-router";
 export default function OnboardingScreen() {
   const router = useRouter();
   const togglehasfinishedOnboarding = useUserStore(
-    (state) => state.toggleHasFinishedOnboarding
+    (state) => state.toggleHasFinishedOnboarding,
   );
   const handlePress = () => {
     togglehasfinishedOnboarding();
@@ -25,8 +25,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
-  },
-  text: {
-    fontSize: 24,
   },
 });
