@@ -16,7 +16,7 @@ import { useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 
 export default function NewScreen() {
-  const [image, setImage] = useState<string>();
+  const [imageUri, setImageUri] = useState<string>();
   const [name, setName] = useState<string>();
   const [days, setDays] = useState<string>();
   const addPlant = usePlantStore((state) => state.addPlant);
@@ -29,18 +29,18 @@ export default function NewScreen() {
     if (!days) {
       return Alert.alert(
         "Validation Error",
-        `How often does ${name} need to be watered?`
+        `How often does ${name} need to be watered?`,
       );
     }
 
     if (Number.isNaN(Number(days))) {
       return Alert.alert(
         "Validation Error",
-        "Watering frequency must be a be a number"
+        "Watering frequency must be a be a number",
       );
     }
 
-    addPlant(name, Number(days));
+    addPlant(name, Number(days), imageUri);
     router.navigate("/");
   };
 
@@ -55,7 +55,7 @@ export default function NewScreen() {
       quality: 1,
     });
     if (!result.canceled) {
-      setImage(result.assets[0].uri);
+      setImageUri(result.assets[0].uri);
     }
   };
 
@@ -70,7 +70,7 @@ export default function NewScreen() {
         activeOpacity={0.8}
         onPress={handleChooseImage}
       >
-        <PlantlyImage imageUri={image} />
+        <PlantlyImage imageUri={imageUri} />
       </TouchableOpacity>
       <Text style={styles.label}>Name</Text>
       <TextInput
