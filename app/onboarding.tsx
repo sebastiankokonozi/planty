@@ -9,11 +9,11 @@ import { PlantlyImage } from "@/components/PlantlyImage";
 
 export default function OnboardingScreen() {
   const router = useRouter();
-  const togglehasfinishedOnboarding = useUserStore(
-    (state) => state.toggleHasFinishedOnboarding
+  const toggleHasfinishedOnboarding = useUserStore(
+    (state) => state.toggleHasFinishedOnboarding,
   );
   const handlePress = () => {
-    togglehasfinishedOnboarding();
+    toggleHasfinishedOnboarding();
     router.replace("/");
   };
   return (
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
+    paddingHorizontal: 8,
   },
   heading: {
     fontSize: 42,
