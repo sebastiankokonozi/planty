@@ -3,19 +3,19 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { persist, createJSONStorage } from "zustand/middleware";
 
 type UserStore = {
-  hasfinishedOnboarding: boolean;
+  hasFinishedOnboarding: boolean;
   toggleHasFinishedOnboarding: () => void;
 };
 
 export const useUserStore = create(
   persist<UserStore>(
     (set) => ({
-      hasfinishedOnboarding: false,
+      hasFinishedOnboarding: false,
       toggleHasFinishedOnboarding: () => {
         return set((state) => {
           return {
             ...state,
-            hasfinishedOnboarding: !state.hasfinishedOnboarding,
+            hasFinishedOnboarding: !state.hasFinishedOnboarding,
           };
         });
       },
