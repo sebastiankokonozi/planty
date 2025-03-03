@@ -17,22 +17,22 @@ Here's a visual tour of Plantly's beautiful interface:
 ### Welcome Screen and Home
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/8-1-ios-7934fa5cb587f09ddffa58bf56cab439.jpeg" width="200" alt="Welcome Screen"/>
-  <img src="assets/8-2-ios-e2491998441e9e86b97df842f69dc41b.jpeg" width="200" alt="Home Screen"/>
+<img src="assets/12-ios-1-30b863475b3a1673557c59dca48487b4.png" width="200" alt="Welcome Screen" />
+  <img src="assets/13-ios-f1874e31254b251680d743992f43e283.png" width="200" alt="Home Screen" />
 </div>
 
 ### Plant Management
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/9-ios-1-dfe42284236737b8dd9bd5b37096e446.png" width="200" alt="Add New Plant"/>
-  <img src="assets/10-ios-46da7a8efd36767ddf9ae540280e548f.jpeg" width="200" alt="Plant List"/>
+  <img src="assets/8-1-ios-7934fa5cb587f09ddffa58bf56cab439.jpeg" width="200" alt="Plant Details" />
+  <img src="assets/8-2-ios-e2491998441e9e86b97df842f69dc41b.jpeg" width="200" alt="Watering Screen" />
 </div>
 
 ### Plant Details and Watering
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/12-ios-1-30b863475b3a1673557c59dca48487b4.png" width="200" alt="Plant Details"/>
-  <img src="assets/13-ios-f1874e31254b251680d743992f43e283.png" width="200" alt="Watering Screen"/>
+    <img src="assets/9-ios-1-dfe42284236737b8dd9bd5b37096e446.png" width="200" alt="Add New Plant"/>
+  <img src="assets/10-ios-46da7a8efd36767ddf9ae540280e548f.jpeg" width="200" alt="Plant List"/>
 </div>
 
 ## 🚀 Getting Started
@@ -114,10 +114,6 @@ plantly/
 - Intuitive navigation
 - Adorable plant illustrations
 - Responsive layout for all screen sizes
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
