@@ -125,5 +125,3 @@ Contributions are welcome! Feel free to submit a Pull Request.
 - Built with love for plant enthusiasts
 
 ---
-
-Made with 🌱 by [Your Name]
